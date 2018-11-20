@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(206, 245, 147);
+}
+#container {
+    text-align: center;
+}
+#notEaten {
+    float: left;
+}
+#devoured {
+    float:right;
+}
