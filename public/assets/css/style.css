@@ -3,10 +3,51 @@ body {
 }
 #container {
     text-align: center;
+    width: 960px;
+    background-color: rgb(206, 245, 147);
+    margin: 0 auto;
+    margin-top: 50px;
+    height: 100%;
 }
 #notEaten {
     float: left;
+    margin-left: 50px;
 }
 #devoured {
     float:right;
+    margin-right: 50px;
+}
+.btn.btn-primary {
+background-color: gray;
+
+}
+
+h3 {
+    text-align: center;
+}
+#burgers {
+    width:700px;
+    margin: 0 auto;
+}
+.create-form {
+    margin-top: 350px;
+}
+p {
+    padding: 5px;
+    margin: 5px;
+    background: #faebd7;
+    border: solid black 2px;
+  }
+#title {
+    color: rgb(197, 50, 50);
+}
+.btn.btn-primary:focus,.btn.btn-primary:active  {
+    outline: none !important;
+    box-shadow: none;
+ }
+.btn.btn-primary:hover {
+    background-color: rgb(88, 87, 87);
+}
+#name {
+    text-align: center;
 }

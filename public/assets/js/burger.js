@@ -23,7 +23,7 @@ $(".create-form").on("submit", function(event) {
   });
 
   // Function to change burger to devoured
-    $(".delburger").on("click", function(event) {
+    $("#delburger").on("click", function(event) {
         alert("burger devoured!")
       var id = $(this).data("id");
       
