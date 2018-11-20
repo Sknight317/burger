@@ -10,9 +10,11 @@
 <ul>
   {{#each burgers}}
     {{#unless devoured}}
-      
+      <p><span class="label">ID:</span> {{this.id}}</p>
+      <p><span class="label">Burger:</span> {{this.burger_name}}</p>
+      <button data-id="{{this.id}}" data-burg="{{this.burger_name}}" class="delburger">Devour</button>
     {{/unless}}
-     <button data-id="{{this.id}}" class="delburger">Delete</button>
+     
   {{/each}}
 </ul>
 </div>
@@ -23,7 +25,8 @@
 <ul>
   {{#each burgers}}
     {{#if devoured}}
-      
+    <p><span class="label">ID:</span> {{this.id}}</p>
+    <p><span class="label">Burger:</span> {{this.burger_name}}</p>
     {{/if}}
   {{/each}}
 </ul>
@@ -33,7 +36,7 @@
 
   <div class="form-group" >
     <label for="burger"></label>
-    <textarea id="burger" name="quote" rows="5" cols="45"></textarea>
+    <textarea id="burger" name="burger" rows="5" cols="45"></textarea>
   </div>
 
   <button type="submit" class="btn btn-primary">Submit</button>
