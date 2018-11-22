@@ -2,7 +2,7 @@
 // Function to add a new burger to the database
 $(function() {
 $(".create-form").on("submit", function(event) {
-    alert("burger added!")
+    // alert("burger added!")
     event.preventDefault();
     var newBurger = {
       burger_name: $("#burger").val().trim(),

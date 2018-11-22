@@ -1,45 +1,119 @@
-body {
-    background-color: rgb(206, 245, 147);
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   style reset
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Css
+*/
+body {
+    background-color: rgb(243, 199, 117) !important;
+    margin:0 auto ;
+}
+
 #container {
     text-align: center;
     width: 960px;
     background-color: rgb(206, 245, 147);
     margin: 0 auto;
     margin-top: 50px;
-    height: 100%;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-radius: 15px;
+    max-width: 100%;
+    height: auto;
+  
 }
 #notEaten {
     float: left;
     margin-left: 50px;
+    max-width: 100%;
+    height: auto;
 }
 #devoured {
     float:right;
     margin-right: 50px;
+    max-width: 100%;
+    height: auto;
 }
 .btn.btn-primary {
 background-color: gray;
-
+border-color: gray;
 }
 
-h3 {
-    text-align: center;
-}
 #burgers {
     width:700px;
     margin: 0 auto;
+    max-width: 100%;
+    height: auto;
 }
 .create-form {
     margin-top: 350px;
+    max-width: 100%;
+    height: auto;
 }
 p {
     padding: 5px;
     margin: 5px;
     background: #faebd7;
-    border: solid black 2px;
+    border: solid gray 1px;
+    border-radius: 10px;
+    font-weight: 600px;
+    font-family: 'Allerta Stencil', sans-serif;
   }
 #title {
     color: rgb(197, 50, 50);
+    font-family: 'Allerta Stencil', sans-serif;
+    padding: 5px;
+    background: #faebd7;
+    width: 33%;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 .btn.btn-primary:focus,.btn.btn-primary:active  {
     outline: none !important;
@@ -47,7 +121,18 @@ p {
  }
 .btn.btn-primary:hover {
     background-color: rgb(88, 87, 87);
+    border-color: gray;
 }
-#name {
+.name {
     text-align: center;
+    
+}
+#delburger {
+    padding: .250rem .10rem;
+    font-size: 0.8rem;
+}
+img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 40%;  max-width: 100%;
+    height: auto;
 }
