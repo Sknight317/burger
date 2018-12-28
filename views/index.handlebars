@@ -2,7 +2,7 @@
 
 <h1 id="title">Eat-Da-Burger!</h1>
 
-<img src="../assets/images/burger.jpg" alt="burger">
+{{!-- <img src="../assets/images/burger.jpg" alt="burger"> --}}
  <br>
  <br>
  <br>
@@ -16,7 +16,7 @@
     {{#unless devoured}}
       {{!-- <p><span class="label">ID:</span> {{this.id}}</p> --}}
       <p><span class="label"></span>{{this.id}}. {{this.burger_name}}
-      <button type="submit" class="btn btn-primary" data-id="{{this.id}}" data-burg="{{this.burger_name}}" id="delburger">Devour</button></p>
+      <button type="submit" class="btn btn-primary metal" data-id="{{this.id}}" data-burg="{{this.burger_name}}" id="delburger">Devour</button></p>
     {{/unless}}
      
   {{/each}}
@@ -37,6 +37,8 @@
 </ul>
 </div>
 </div>
+
+
 <form class="create-form">
 
   <div class="form-group" >
@@ -44,7 +46,7 @@
     <textarea id="burger" name="burger" rows="3" cols="45"></textarea>
   </div>
 
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary metal" id="submit">Submit</button>
   <h3 class="name">Enter a burger you want to eat and click the Submit button!</h3>
 </form>
 </div>

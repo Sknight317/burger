@@ -58,7 +58,11 @@ body {
 #container {
     text-align: center;
     width: 960px;
-    background-color: rgb(206, 245, 147);
+    /* background-color: rgb(206, 245, 147); */
+    background-image: url("../images/pexels-photo-1639562.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -67,23 +71,46 @@ body {
     border-radius: 15px;
     max-width: 100%;
     height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   
 }
 #notEaten {
     float: left;
-    margin-left: 50px;
-    max-width: 100%;
-    height: auto;
+    /* margin-left: 50px; */
+    /* max-width: 100%;
+    height: auto; */
+    border: 3px inset white;
+    background: black;
+    padding: 2px;
 }
 #devoured {
     float:right;
-    margin-right: 50px;
-    max-width: 100%;
-    height: auto;
+    /* margin-right: 50px; */
+    /* max-width: 100%;
+    height: auto; */
+    border: 3px inset white;
+    background: black;
+    padding: 2px;
+}
+#submit {
+    margin-bottom: 15px;
 }
 .btn.btn-primary {
-background-color: gray;
+/* background-color: gray;
 border-color: gray;
+margin-bottom: 20px; */
+
+padding: 15px;
+border: none;
+border-radius: .5em;
+background-image: -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0)   6%, hsla(0,0%,100%, .1) 7.5%),
+  -webkit-repeating-linear-gradient(left, hsla(0,0%,  0%,0) 0%, hsla(0,0%,  0%,0)   4%, hsla(0,0%,  0%,.03) 4.5%),
+  -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.15) 2.2%),
+  
+  linear-gradient(180deg, hsl(0,0%,78%)  0%, 
+  hsl(0,0%,90%) 47%, 
+  hsl(0,0%,78%) 53%,
+  hsl(0,0%,70%)100%);
 }
 
 #burgers {
@@ -114,25 +141,119 @@ p {
     width: 33%;
     margin: 0 auto;
     margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 3px inset white;
 }
 .btn.btn-primary:focus,.btn.btn-primary:active  {
     outline: none !important;
     box-shadow: none;
  }
-.btn.btn-primary:hover {
+.btn.btn-primary.metal:hover {
     background-color: rgb(88, 87, 87);
-    border-color: gray;
+    border: none;
+    background-image: none;
+    
 }
 .name {
     text-align: center;
-    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: rgb(197, 50, 50);
+    padding: 5px;
+    background: #faebd7;
 }
-#delburger {
+/* #delburger {
     padding: .250rem .10rem;
     font-size: 0.8rem;
-}
+} */
 img {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 40%;  max-width: 100%;
     height: auto;
 }
+textarea#burger {
+    border-radius: 10px;
+    border: 2px solid rgb(88, 87, 87);
+    outline:none;
+    clear: both;
+    transition: .3s;
+    margin-top: 90px;
+}
+textarea#burger:focus {
+    border:4px inset rgb(88, 87, 87);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* globals */
+
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans:regular,bold);
+@import url(prefixes.css);
+
+/* html {
+  font:62.5%/1 "Droid Sans", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+  background-color: hsla(0,0%,90%,1);  
+  background-image: linear-gradient(-45deg, hsla(0,0%,0%,0), hsla(0,0%,0%,.05) );
+  background-size: 5px;
+} */
+
+
+a { text-decoration: none;
+     display: block;
+    color: none
+ }
+
+/* Metal ------------------------- */
+
+.metal {
+    position: relative;
+    margin:  auto;
+    outline: none;
+    border: none;
+    font: bold 6em/2em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    text-align: center;
+    color: hsla(0,0%,20%,1) !important;
+    text-shadow: hsla(0,0%,40%,.5) 0 -1px 0, hsla(0,0%,100%,.6) 0 2px 1px;
+    
+    background-color: hsl(0,0%,90%);
+    box-shadow: inset hsla(0,0%,15%,  1) 0  0px 0px 4px, /* border */
+      inset hsla(0,0%,15%, .8) 0 -1px 5px 4px, /* soft SD */
+      inset hsla(0,0%,0%, .25) 0 -1px 0px 7px, /* bottom SD */
+      inset hsla(0,0%,100%,.7) 0  2px 1px 7px, /* top HL */
+      
+      hsla(0,0%, 0%,.15) 0 -5px 6px 4px, /* outer SD */
+      hsla(0,0%,100%,.5) 0  5px 6px 4px; /* outer HL */ 
+    
+    transition: color .2s;
+  }
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px) {
+    div#notEaten {
+        width: 100%;
+        height: auto;
+        float: none;
+        margin-bottom: 40px;
+    }
+    div#devoured {
+        width: 100%;
+        height: auto;
+        float: none;
+       
+        
+    }
+    textarea#burger {
+        width: 100%;
+        height: auto;
+    }
+    #submit {
+        width: 100%;
+    }
+    #container {
+        display: flex;
+        flex-direction: column;
+    }
+  }
+  
+  .create-form {
+    clear: both;
+    margin: 50px;
+    }
+ 
